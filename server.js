@@ -2,6 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+app.use(cors({
+    origin: 'https://iotunbara.my.id/' // Ganti dengan IP atau domain frontend 
+  }));
+
 const app = express();
 const port = 3000;
 
