@@ -113,7 +113,7 @@ app.post('/api/control_mode', (req, res) => {
 
 // --- Mulai server ---
 app.listen(port, () => {
-    console.log(`IoT Backend Server listening at http://localhost:${port}`);
+    console.log(`IoT Backend Server listening at http://0.0.0.0:${port}`);
     console.log(`
         Frontend (Web) Endpoints:
         - GET  http://0.0.0.0:${port}/api/sensor_data       (Get latest sensor readings)
