@@ -116,14 +116,14 @@ app.listen(port, () => {
     console.log(`IoT Backend Server listening at http://localhost:${port}`);
     console.log(`
         Frontend (Web) Endpoints:
-        - GET  http://localhost:${port}/api/sensor_data       (Get latest sensor readings)
-        - POST http://localhost:${port}/api/pump_control      (Control pump in manual mode, e.g., {"status": true/false})
-        - GET  http://localhost:${port}/api/control_mode      (Get current control mode)
-        - POST http://localhost:${port}/api/control_mode      (Set control mode, e.g., {"mode": "manual"/"autoFuzzy"})
+        - GET  http://0.0.0.0:${port}/api/sensor_data       (Get latest sensor readings)
+        - POST http://0.0.0.0:${port}/api/pump_control      (Control pump in manual mode, e.g., {"status": true/false})
+        - GET  http://0.0.0.0:${port}/api/control_mode      (Get current control mode)
+        - POST http://0.0.0.0:${port}/api/control_mode      (Set control mode, e.g., {"mode": "manual"/"autoFuzzy"})
 
         ESP32 Endpoints:
-        - POST http://localhost:${port}/api/sensor_data       (Send sensor data)
-        - GET  http://localhost:${port}/api/control_mode      (Get current control mode)
-        - GET  http://localhost:${port}/api/pump_manual_status (Get desired manual pump status)
+        - POST http://0.0.0.0:${port}/api/sensor_data       (Send sensor data)
+        - GET  http://0.0.0.0:${port}/api/control_mode      (Get current control mode)
+        - GET  http://0.0.0.0:${port}/api/pump_manual_status (Get desired manual pump status)
     `);
 });
